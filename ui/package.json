@@ -45,7 +45,7 @@
     "unplugin-icons": "22.1.0",
     "vite": "6.3.5",
     "vitest": "3.2.3",
-    "zod": "3.25.56"
+    "zod": "4.5.4"
   },
   "type": "module"
 }
