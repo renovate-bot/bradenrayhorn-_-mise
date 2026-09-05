@@ -5,9 +5,9 @@
     "test": "playwright test"
   },
   "devDependencies": {
-    "@playwright/test": "1.53.0",
-    "@types/node": "22.15.30",
-    "prettier": "3.5.3",
+    "@playwright/test": "1.62.1",
+    "@types/node": "22.20.1",
+    "prettier": "3.9.6",
     "uid": "2.0.2"
   }
 }

@@ -8,7 +8,7 @@ license = "AGPL-3.0-only"
 
 [dependencies]
 tokio = { version = "1", features = ["full"] }
-rusqlite = { version = "0.36.0", features = ["bundled", "chrono"] }
+rusqlite = { version = "0.40.0", features = ["bundled", "chrono"] }
 thiserror = "2.0.11"
 anyhow = "1.0"
 axum = { version = "0.8.4", features = [
@@ -22,7 +22,7 @@ serde = { version = "1.0.199", features = ["derive"] }
 openidconnect = { version = "4.0.0-alpha.1", features = [
 	"reqwest",
 ], default-features = false }
-reqwest = { version = "0.12.20", default-features = false, features = [
+reqwest = { version = "0.13.0", default-features = false, features = [
 	"charset",
 	"cookies",
 	"http2",
@@ -30,16 +30,16 @@ reqwest = { version = "0.12.20", default-features = false, features = [
 	"multipart",
 	"rustls-tls",
 ] }
-axum-extra = { version = "0.10.0", features = [
+axum-extra = { version = "0.12.0", features = [
 	"cookie-private",
 ], default-features = false }
 serde_json = "1.0.117"
 cookie = "0.18.1"
 sha256 = "1.5.0"
-toml = "0.8.23"
+toml = "0.9.0"
 chrono = { version = "0.4.41", default-features = false }
 ring = "0.17.8"
-base64 = { version = "0.22.1", default-features = false }
+base64 = { version = "0.23.0", default-features = false }
 rand = "0.9.1"
 bidiff = "1.0.0"
 bipatch = "1.0.0"
@@ -48,10 +48,10 @@ zstd = "0.13.1"
 ulid = { version = "1.1.2", features = ["serde"] }
 async-trait = "0.1.80"
 hex = { version = "0.4.3", default-features = false }
-reqwest_cookie_store = "0.8.0"
-tower-http = { version = "0.6.6", features = ["fs", "timeout"] }
+reqwest_cookie_store = "0.10.0"
+tower-http = { version = "0.7.0", features = ["fs", "timeout"] }
 tower = "0.5"
 ammonia = "4.1.0"
 pulldown-cmark = "0.13.0"
-milli_v1 = { git = "https://github.com/meilisearch/meilisearch", package = "milli", tag = "v1.15.2" }
+milli_v1 = { git = "https://github.com/meilisearch/meilisearch", package = "milli", tag = "v1.53.1" }
 futures = "0.3.31"
