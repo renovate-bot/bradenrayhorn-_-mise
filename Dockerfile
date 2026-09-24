@@ -1,4 +1,4 @@
-FROM rust:1.87-alpine@sha256:126df0f2a57e675f9306fe180b833982ffb996e90a92a793bb75253cfeed5475 AS rust_base
+FROM rust:1.98-alpine@sha256:7cc1c22d77d9432f7fe012a70e6d3e555af54c2a6832700ed7d553f1769ae89f AS rust_base
 
 RUN apk add musl-dev pkgconfig wget
 
@@ -38,7 +38,7 @@ WORKDIR /app
 RUN cargo build --release
 
 # assemble final image
-FROM alpine:3.22@sha256:8a1f59ffb675680d47db6337b49d22281a139e9d709335b492be023728e11715
+FROM alpine:3.24@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6
 
 RUN apk add vips-tools
 
