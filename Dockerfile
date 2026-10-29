@@ -14,7 +14,7 @@ WORKDIR /app
 RUN cargo bundle-licenses --format json --output /app/server-licenses.json
 
 # build frontend
-FROM node:22-alpine@sha256:41e4389f3d988d2ed55392df4db1420ad048ae53324a8e2b7c6d19508288107e AS ui_builder
+FROM node:26-alpine@sha256:c6ad9e9c1d80f6eb607c26b4b0a132ff7a2344fad1c78ea3baa2a7d4c8de6d94 AS ui_builder
 
 RUN mkdir /app
 COPY /ui app/
